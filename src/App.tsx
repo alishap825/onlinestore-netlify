@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import { BounceLoader } from 'react-spinners';
-import { jsx, css } from '@emotion/react';
+import {  css } from '@emotion/react';
 import './App.css';
 
 
