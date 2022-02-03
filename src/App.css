@@ -5,9 +5,15 @@
   display: flex;
  flex-direction: column;
  align-items: center;
+ 
+}
+ul{
+  margin: 16px;
+  padding: 40px;
 }
 body{
   background-color: #FBFCFF;
+  align-items: center;
 }
 h1{
   color: #082044;
@@ -38,6 +44,8 @@ h4{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
+  
 }
 .content{
   background-color: rgba(219, 219, 219, 0.993);
@@ -48,7 +56,9 @@ h4{
   box-sizing: inherit;
   line-height: 1.5;
   font-size: 1rem;
+  object-fit: contain;
   overflow-wrap: break-word;
+  
 }
 .box{
   background-color: white;
@@ -71,3 +81,32 @@ img {
   object-fit: contain;
   margin-bottom: 40px;
 }
+@media (max-width: 1200px) {
+  
+  
+  .App,  .box{
+  
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    object-fit: contain;
+  }
+  .container{
+    align-items: center;
+  }
+  .img{
+    object-fit: contain;
+    align-items: center;
+    
+    justify-content: center;
+    
+  }
+  h1{
+    justify-content: center;
+    text-align: center;
+  }
+  
+}
+
