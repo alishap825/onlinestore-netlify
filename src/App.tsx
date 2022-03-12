@@ -49,11 +49,14 @@ function App() {
           <>
           <div className="box">
           <div className="content">
+          <img src={values.image} alt="" />
             <h3>{values.title}</h3>
             <h4>${values.price}</h4>
-            <p>{values.description}</p>
+            
+          
+            
           </div>
-           <img src={values.image} alt="" />
+           
         </div>
           </>
         )

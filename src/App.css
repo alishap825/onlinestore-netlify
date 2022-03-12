@@ -35,8 +35,8 @@ h4{
   margin: 2px;
 }
 .container{
-  background-color: #FFFFFF;
-  box-shadow: 25px 0 45px 10px rgb(0 0 0 / 7%);
+ 
+  
   margin: 0 auto;
   
   max-width: 1300px;
@@ -47,7 +47,7 @@ h4{
   
 }
 .content{
-  background-color: rgba(219, 219, 219, 0.993);
+  
   display: block;
   margin-bottom: 50px;
   padding: 15px;
