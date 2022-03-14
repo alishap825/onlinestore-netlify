@@ -1,6 +1,5 @@
 import React,{useState, useEffect} from 'react';
 import { BounceLoader } from 'react-spinners';
-import {  css } from '@emotion/react';
 import './App.css';
 
 
@@ -28,26 +27,28 @@ function App() {
     fakeStore();
   }, [setProduct]);
 
- const loaderCSS = css`
- margin-top: 300px;
- margin-bottom: 400px;
-`
+ 
   // fakeStore();
-  
+
   return (
     <div className="App">
+      
     <React.Fragment>
+    
     {hasError && <p>Something went wrong.</p>}
     {isLoading ? (
-      <BounceLoader css={loaderCSS} size={100} color='#082044' loading />
+      <BounceLoader size={100} color='#082044' loading />
       ) : (
-        <ul>
-      <h1>ONLINE STORE</h1>
+        
+        <ul> <h1>ONLINE STORE</h1>
+      
       <div className="container">
+      
       {product.map((values)=>{
+        
         return(
           <>
-          <div className="box">
+          <div className="box"> 
           <div className="content">
           <img src={values.image} alt="" />
             <h3>{values.title}</h3>
@@ -61,10 +62,16 @@ function App() {
           </>
         )
       })}
+      <div className='footer'>
+      Hello world
       </div>
+      </div>
+      
       </ul>
        )}
+       
     </React.Fragment>
+    
     </div>
   
 );
