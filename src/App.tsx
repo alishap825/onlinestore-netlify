@@ -1,4 +1,5 @@
 import React,{useState, useEffect} from 'react';
+import Footer from './components/Footer';
 import { BounceLoader } from 'react-spinners';
 import './App.css';
 
@@ -31,49 +32,51 @@ function App() {
   // fakeStore();
 
   return (
+    
     <div className="App">
-      
-    <React.Fragment>
-    
-    {hasError && <p>Something went wrong.</p>}
-    {isLoading ? (
-      <BounceLoader size={100} color='#082044' loading />
-      ) : (
-        
-        <ul> <h1>ONLINE STORE</h1>
-      
-      <div className="container">
-      
-      {product.map((values)=>{
-        
-        return(
-          <>
-          <div className="box"> 
-          <div className="content">
-          <img src={values.image} alt="" />
-            <h3>{values.title}</h3>
-            <h4>${values.price}</h4>
-            
-          
-            
-          </div>
-           
-        </div>
-          </>
-        )
-      })}
-      <div className='footer'>
-      Hello world
-      </div>
+        {hasError && <p>Something went wrong.</p>}
+        {isLoading ? (
+          <BounceLoader size={100} color='#082044' loading />
+        ) : (
+
+          <ul> <h1>ONLINE STORE</h1>
+
+            <div className="container">
+
+              {product.map((values) => {
+
+                return (
+                  
+                  <>
+                    <div className="box">
+                      <div className="content">
+                        <img src={values.image} alt="" />
+                        <h3>{values.title}</h3>
+                        <h4>${values.price}</h4>
+                      </div>
+
+                    </div>
+                    
+                  </>
+                  
+                );
+              })}
+
+            </div>
+            <div className='content-wrap'>
+        <Footer />
       </div>
       
-      </ul>
-       )}
-       
-    </React.Fragment>
-    
-    </div>
-  
+          </ul>
+
+        )}
+
+     
+      
+      </div>
+      
+   
+   
 );
 }
 export default App;
