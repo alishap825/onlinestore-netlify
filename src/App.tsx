@@ -54,18 +54,20 @@ function App() {
                         <h3>{values.title}</h3>
                         <h4>${values.price}</h4>
                       </div>
-
+                      
                     </div>
                     
                   </>
                   
                 );
+                
               })}
-
-            </div>
-            <div className='content-wrap'>
+<div className='content-wrap'>
         <Footer />
       </div>
+            
+            </div>
+            
       
           </ul>
 

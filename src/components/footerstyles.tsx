@@ -3,11 +3,12 @@ import styled from 'styled-components';
 export const Box = styled.div`
   
   background: #082044;
-  position: fixed;
+  
   bottom: 0;
+  display: block;
+  box-sizing: inherit;
   width: 100%;
   height: 120px;
-  
   @media (max-width: 1000px) {
     
     
@@ -20,7 +21,7 @@ export const Container = styled.div`
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    
+    margin-bottom: 50px;
     /* background: red; */
     `
    
@@ -44,12 +45,11 @@ export const Row = styled.div`
 `;
 export const FooterLink = styled.a`
   color: #fff;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  
+ margin: 0 auto;
   font-size: 12px;
   text-decoration: none;
-   padding:0px;
+  text-align: left;
+   padding-bottom: 5px;
   &:hover {
       color: green;
       transition: 200ms ease-in;

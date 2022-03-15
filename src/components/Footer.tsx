@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         
       <Box>
-     <div className='main-footer'>
+     
         <Container >
           <Row>
             <Column>
@@ -61,7 +61,7 @@ const Footer = () => {
           </Column>
         </Row>
       </Container>
-      </div>
+      
     </Box>
     
    
