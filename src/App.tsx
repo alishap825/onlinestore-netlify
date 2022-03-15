@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import Footer from './components/Footer';
 import { BounceLoader } from 'react-spinners';
 import './App.css';
+import img from './bluecart.png';
 
 
 
@@ -39,7 +40,7 @@ function App() {
           <BounceLoader size={100} color='#082044' loading />
         ) : (
 
-          <ul> <h1>ONLINE STORE</h1>
+          <ul> <img src={img} alt="shoppingcrt" width={100} height={100}></img><h1>ONLINE STORE</h1>
 
             <div className="container">
 
