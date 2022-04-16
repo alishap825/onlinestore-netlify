@@ -40,7 +40,9 @@ function App() {
           <BounceLoader size={100} color='#082044' loading />
         ) : (
 
-          <ul> <img src={img} alt="shoppingcrt" width={100} height={100}></img><h1>ONLINE STORE</h1>
+          <ul>
+            {/* <img src={img} alt="shoppingcrt" width={100} height={100}></img> */}
+            <h1>ONLINE STORE</h1>
 
             <div className="container">
 
@@ -51,7 +53,7 @@ function App() {
                   <>
                     <div className="box">
                       <div className="content">
-                        <img src={values.image} alt="" />
+                       <img src={values.image} alt="" />
                         <h3>{values.title}</h3>
                         <h4>${values.price}</h4>
                       </div>

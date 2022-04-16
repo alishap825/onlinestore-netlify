@@ -18,7 +18,7 @@ export const Box = styled.div`
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -45,11 +45,12 @@ export const Row = styled.div`
 `;
 export const FooterLink = styled.a`
   color: #fff;
- margin: 0 auto;
+ 
   font-size: 12px;
   text-decoration: none;
   text-align: left;
    padding-bottom: 5px;
+   padding-left: 90px;
   &:hover {
       color: green;
       transition: 200ms ease-in;
@@ -59,9 +60,8 @@ export const FooterLink = styled.a`
 export const Heading = styled.p`
   font-size: 14px;
   color: #fff;
- margin: 0 auto;
   margin-bottom: 10px;
   margin-top: 15px;
-  padding: 0;
+  padding-left: 88px;
   font-weight: bold;
 `;

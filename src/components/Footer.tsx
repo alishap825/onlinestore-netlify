@@ -39,21 +39,21 @@ const Footer = () => {
             <Heading>Social Media</Heading>
             <FooterLink href="#">
               <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>
+                <span >
                   Facebook
                 </span>
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>
+                <span >
                   Instagram
                 </span>
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>
+                <span >
                   Twitter
                 </span>
               </i>
